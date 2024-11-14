@@ -8,3 +8,4 @@ elif second == first or third == second or first == third:
     print(2)
 else:
     print(0)
+
