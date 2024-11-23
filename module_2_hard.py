@@ -9,3 +9,4 @@ if number > 2 and number < 21:
     print('Ваш пароль: ', *password)
 else:
     print('Вы ввели неверное число, введите другое.')
+
