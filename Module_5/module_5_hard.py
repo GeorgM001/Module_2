@@ -1,5 +1,6 @@
 from time import sleep
 
+
 class User:
     def __init__(self, nickname: str, password: str, age: int):
         self.nickname = nickname
@@ -16,10 +17,8 @@ class User:
         return self.nickname == other.nickname
 
 
-
-
 class Video:
-    def __init__(self, title: str, duration: int, adult_mode = False):
+    def __init__(self, title: str, duration: int, adult_mode=False):
         self.title = title
         self.duration = duration
         self.time_now = 0
@@ -29,15 +28,13 @@ class Video:
         return self.title
 
 
-
-
 class UrTube:
     def __init__(self):
         self.users = []
         self.videos = []
         self.current_user = None
 
-    def log_in(self,login, password):
+    def log_in(self, login, password):
         for user in self.users:
             if (login, hash(password)) == user.get_info():
                 self.current_user = user
@@ -84,10 +81,6 @@ class UrTube:
                 video.time_now = 0
                 return
         print(f'Видео не найдено.')
-
-
-
-
 
 
 ur = UrTube()
