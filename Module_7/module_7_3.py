@@ -26,7 +26,6 @@ class WordsFinder:
         word = word.lower()
         all_words = self.get_all_words()
         count_words = {}
-        co = 0
         for name, words in all_words.items():
             count_words[name] = words.count(word)
         return count_words
